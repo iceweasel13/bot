@@ -1,0 +1,28 @@
+{
+  "name": "base-jesse-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && npm run start:dist",
+    "dev": "ts-node-esm --transpile-only src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start:dist": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@zoralabs/coins-sdk": "^0.3.1",
+    "dotenv": "^17.2.2",
+    "node-telegram-bot-api": "^0.66.0",
+    "viem": "^2.37.8"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "@types/node-telegram-bot-api": "^0.64.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
